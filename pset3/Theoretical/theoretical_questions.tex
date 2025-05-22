@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx} 
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.7\textwidth]{filename.png}
+%     \caption{Your figure caption here.}
+%     \label{fig:yourlabel}
+% \end{figure}
+
+\begin{document}
+
+\title{Assignment 3 - Data Science \\
+Theoretical Questions}
+\author{Mohammad Hossein Basouli}
+\date{\today}
+\maketitle
+
+\section*{Question 1}
+\begin{itemize}
+    \item \textbf{Gaussian Mixture Models}: 
+    \begin{enumerate}
+        \item It first initializes some gaussian distributions over the feature space.
+        \item Then it estimates the probability of the data points based on the parameters.
+        \item After that, it tries to maximize the likelihood of those parameters by changing them.
+        \item At the end, it will apply the clustering on the dataset using a mixture of these gaussian distributions, by essentially assigning a probability of belonging to each of the distributions.
+    \end{enumerate}
+    \textit{\textbf{It performs the best where}: the clusters are elliptic - we want to have a soft clustering - dimension is not too high - dataset is not too large}
+    \item \textbf{K-means ++}: 
+    \begin{enumerate}
+        \item It first picks the first centroid.
+        \item Then it will find the remaining centroid by assigning a probability, propotional to the distance from the first centroid. 
+        \item Then it will apply the \textbf{Ordinary K-means} to the dataset. 
+    \end{enumerate}
+    \textit{\textbf{It performs the best where}: the clusters are spherical and convex shaped - the dataset is large or the dimension is high}
+    \item \textbf{Spectral Clustering}: 
+    \begin{enumerate}
+        \item It first obtains a \textbf{similarity matrix} from the dataset. (which IDK what it's exactly.)
+        \item Then it finds the \textbf{graph Laplacian}. (which again, IDK what it's exactly.)
+        \item After that, it tries to find the eigen vectors that correspond to the smallest eigen values of the \textbf{Laplacian matrix}, which captures the essential structure of the data.
+        \item Each row of the matrix formed by the eigenvectors can be treated as a new data point in a lower-dimensional space.   
+        \item Then it will apply the \textbf{Ordinary K-means} to the dataset. 
+    \end{enumerate}
+    \textit{\textbf{It performs the best where}: the clusters are non-convex shaped - dataset is small}
+\end{itemize}
+
+\section*{Question 2}
+Following methods, used along with appropriate distance measures, could be used for mixed data type clustering:
+\begin{enumerate}
+    \item \textbf{Hierarchical Clustering}
+    \item \textbf{DBSCAN}
+    \item \textbf{K-Prototypes}
+\end{enumerate}
+
+\section*{Question 3}
+\textbf{Soft Clustering} is trying to somehow model the world under a uncertainty basis, whereas \textbf{Hard Clustering} tries to draw a rigid decision boundary and specify a single cluster that the data point could belong to.
+\textbf{Soft Clustering} might be a more appropriate approach when the clusters (or groups) are overlapping and we would rather want to have a uncertainty measure or a degree of confidence on how much it's possible for a data point to belong to a cluster.  
+
+\section*{Question 4}
+\textbf{DBSCAN}: In this algorithm, we have three types of data points; \textbf{Core}, \textbf{Reachable}, \textbf{Unreachable}, the latter case typically indicate outliers.
+\textbf{GMM}: When the algorithm, finally maximizes the expectation, we will have several different gaussian distributions over the features space. If we find out that a data point has a low probability in all of these distributions, then it's a outlier.
+
+\section*{Question 5}
+We could utilize clustering methods that are robust to imbalance data; such as \textbf{DBSCAN}, \textbf{Hierarchical Clustering}. Also we might want to use metrics that take imbalanceness of the dataset into account as well, e.g. \textbf{Recall}, \textbf{F\_1 Score}, \textbf{ROC Curve}.
+
+\section*{Question 6}
+\begin{enumerate}[label=(\alph*)]
+  \item Explaining \textbf{Agglomerative Hierarchical Clustering}:
+  \begin{itemize}
+    \item It first takes each datapoint as a single separate cluster.
+    \item Then it begins by merging each pair of the clusters and calculate the centroid for that cluster. 
+    \item After that, it calculates the sum of squared distances of the data points in the merged cluster, from the obtained centroid, it then merges the pair of clusters that have the smallest sum of squared distances from their centroid.
+  \end{itemize}
+  \item For obtaining the optimal number of clustering by just using the \textbf{dendrograms}, we could look at the obtained dendrogram and then cut it at the level above where the distance, between the clusters that join, is low, or at least, don't change with respect to the level above it.
+  \item Cutting the dendrogram at three clusters, essentially mean that we have partitioned the customers into three different levels (or groups) in terms of their behavior. And if you ask what are the properties of each of these groups ?
+  We should say that, it really depends on our dendrogram.
+\end{enumerate}
+
+
+
+\end{document}
