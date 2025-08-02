@@ -1,11 +1,11 @@
 # Data Science Assignments (Spring 2025)
 
-This repository contains all problem sets (psets) for the Data Science course held in Spring 2025 at the Computer Science Department of Shahid Beheshti University. Each problem set includes two main components:
+This repository contains all problem sets (psets) for the Data Science course held in Spring 2025 at the Computer Science Department of Shahid Beheshti University, taught by [Dr. Saeid Reza Kherad Pisheh](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ir.linkedin.com/in/saeed-reza-kheradpisheh-7a0b18155&ved=2ahUKEwiBobvAuuuOAxVbi_0HHQlwNA0QFnoECBkQAQ&usg=AOvVaw3cNI4MvYfqafbgAViN03uo). Each problem set includes two main components:
 
-1. **Question Set (document.pdf)**: A PDF containing the problem statements, background information, and any data descriptions needed to complete the assignment.  
-2. **Answer Set**: Solutions provided in Jupyter Notebook format (`.ipynb`) alongside a PDF export of the notebook (for easy viewing/printing). In some cases (e.g., pset0), there is a standalone PDF solution file.
+1. **Question Set (document.pdf)**: A PDF containing the problem statements.
+2. **Answer Set**: Solutions provided in Jupyter Notebook format, alongside a PDF, including the report of the analysis of the notebook. In some cases (e.g., pset0), there is a standalone PDF solution file.
 
-Below is a high-level summary of the repository structure, followed by detailed information for each problem set—including a brief summary of the question document, a summary of the provided answers (both `.ipynb` and PDF), and direct links to all files.
+Below is a high-level summary of the repository structure, followed by detailed information for each problem set—including a brief summary of the problem set, and direct links important to files.
 
 ---
 
@@ -22,8 +22,8 @@ Below is a high-level summary of the repository structure, followed by detailed 
 │ │ ├── amazon_sales_analysis.ipynb
 │ │ └── amazon_sales_analysis.pdf
 │ └── Customer Personality Analysis
-│ ├── customer_personality_analysis.ipynb
-│ └── customer_personality_analysis.pdf
+│   ├── customer_personality_analysis.ipynb
+│   └── customer_personality_analysis.pdf
 │
 ├── pset2
 │ ├── document.pdf
@@ -35,11 +35,15 @@ Below is a high-level summary of the repository structure, followed by detailed 
 │ ├── user_segmentation_brazillian_ecommerce.ipynb
 │ └── user_segmentation_brazillian_ecommerce.pdf
 │
-└── pset4
-├── document.pdf
-├── disease_detection.ipynb
-└── disease_detection.pdf
-
+├── pset4
+│ ├── document.pdf
+│ ├── disease_detection.ipynb 
+│ └── disease_detection.pdf
+|
+└── pset5
+  ├── document.pdf
+  ├── insurance_policy_cost_prediction.ipynb
+  └── insurance_policy_cost_prediction.pdf
 ```
 
 
@@ -48,7 +52,7 @@ Below is a high-level summary of the repository structure, followed by detailed 
 ## pset0
 
 **Summary:**  
-Introductory exercises focusing on Python basics, data loading, cleaning, summary statistics, and simple visualizations using pandas and matplotlib.
+Introductory exercises focusing on data loading, cleaning, summary statistics, and simple visualizations using pandas and matplotlib.
 
 **Techniques Applied:**  
 - Writing A Formal Data Analysis Report (Including; Partitioning the Report into Different Sections such as, Abstract, Introduction, Data, Methodology, Conclusion, etc.)
@@ -156,4 +160,26 @@ Classification model for disease prediction using medical data. Preprocessing, l
 - [Notebook](pset4/disease_detection.ipynb)  
 - [PDF](pset4/disease_detection.pdf)  
 
+## pset5
+
+**Summary:**  
+Regression models for insurance policy cost prediction. 
+
+**Techniques Applied:**  
+- Exploratory Data Analysis
+- Data Preprocessing
+- Regression
+  - Random Forests
+  - AdaBoost
+  - XGBoost
+  - Light Boost
+  - Cat Boost
+  - Polynomial Regression with Ridge Cost
+
+**Question Set:**  
+- [pset5/document.pdf](pset5/document.pdf)  
+
+**Answer Set:**  
+- [Notebook](pset5/insurance_policy_cost_prediction.ipynb)  
+- [PDF](pset5/insurance_policy_cost_prediction.pdf)  
 ---
