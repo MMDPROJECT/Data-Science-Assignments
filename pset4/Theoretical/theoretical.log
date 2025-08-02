@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.24)  22 MAY 2025 22:18
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.24)  2 AUG 2025 10:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/mmdproject/SBU/Term_6/Data Science/Data Science Problem Sets/pset4/Theoretical/theoretical_questions"
-(/home/mmdproject/SBU/Term_6/Data Science/Data Science Problem Sets/pset4/Theoretical/theoretical_questions.tex
+**"/home/mmdproject/SBU/Term_6/Data Science/Data Science Problem Sets/pset4/Theoretical/theoretical"
+(/home/mmdproject/SBU/Term_6/Data Science/Data Science Problem Sets/pset4/Theoretical/theoretical.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/home/mmdproject/.TinyTeX/texmf-dist/tex/latex/base/article.cls
@@ -241,8 +241,8 @@ File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
 \l__pdf_internal_box=\box58
 \g__pdf_backend_annotation_int=\count296
 \g__pdf_backend_link_int=\count297
-) (./theoretical_questions.aux)
-\openout1 = `theoretical_questions.aux'.
+) (./theoretical.aux)
+\openout1 = `theoretical.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -265,9 +265,9 @@ LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 Package hyperref Info: Link coloring OFF on input line 17.
- (./theoretical_questions.out) (./theoretical_questions.out)
+ (./theoretical.out) (./theoretical.out)
 \@outlinefile=\write3
-\openout3 = `theoretical_questions.out'.
+\openout3 = `theoretical.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
  (/home/mmdproject/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -302,21 +302,21 @@ File: ../images/metric_for_classifier.png Graphic file (type bmp)
 
 [8]
 
-[9] (./theoretical_questions.aux)
+[9] (./theoretical.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `theoretical_questions.out' has not changed.
+Package rerunfilecheck Info: File `theoretical.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  9728 strings out of 475848
- 149959 string characters out of 5775002
- 543558 words of memory out of 5000000
+ 149769 string characters out of 5775002
+ 543508 words of memory out of 5000000
  32534 multiletter control sequences out of 15000+600000
  569290 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,6n,79p,749b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,79p,739b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on theoretical_questions.pdf (9 pages).
+Output written on theoretical.pdf (9 pages).
